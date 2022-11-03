@@ -9,7 +9,8 @@
         android:id="@+id/facultyFragment"
         android:name="com.kaelynhughes.assignment4.FacultyFragment"
         android:label="fragment_faculty"
-        tools:layout="@layout/fragment_faculty" />
+        tools:layout="@layout/fragment_faculty" >
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.kaelynhughes.assignment4.HomeFragment"

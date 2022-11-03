@@ -8,6 +8,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="recycler view with list of research areas - each one has name, description, and names of faculty involved" />
+        android:text="recycler view with list of research areas - each one has name, description, and names of faculty involved"
+        android:textSize="40sp" />
 
 </FrameLayout>

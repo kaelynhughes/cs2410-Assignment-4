@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.kaelynhughes.assignment4.databinding.FragmentHomeBinding
+import com.kaelynhughes.assignment4.databinding.FragmentResearchBinding
 
 class ResearchFragment : Fragment() {
     override fun onCreateView(
@@ -13,7 +13,7 @@ class ResearchFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val binding = FragmentResearchBinding.inflate(inflater, container, false)
         return binding.root
     }
 }
