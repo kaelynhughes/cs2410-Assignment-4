@@ -12,36 +12,156 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/numberOfStudents"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="number students, programs offered, name of head, contact info, link to faculty and research pages"
-            android:textSize="40sp"
-            app:layout_constraintBottom_toTopOf="@+id/toResearchButton"
-            app:layout_constraintEnd_toEndOf="@id/toResearchButton"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/toResearchButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Research"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintBottom_toTopOf="@+id/toFacultyButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/toFacultyButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Faculty"
+            android:text="NUMBER OF STUDENTS HERE"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toResearchButton"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/programsOffered" />
+
+        <TextView
+            android:id="@+id/programsOffered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROGRAMS OFFERED HERE"
+            app:layout_constraintBottom_toTopOf="@+id/headOfProgram"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberOfStudents" />
+
+        <TextView
+            android:id="@+id/headOfProgram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HEAD OF PROGRAM HERE"
+            app:layout_constraintBottom_toTopOf="@+id/ContactInfo"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/programsOffered" />
+
+        <LinearLayout
+            android:id="@+id/ContactInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent" >
+
+            <TextView
+                android:id="@+id/contactLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact us!"
+                android:textAlignment="center" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/InfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_constraintBottom_toBottomOf="parent"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@id/DigitalContact"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address:"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4205 Old Main Hill"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Office 414 Old Main Bldg"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Logan, UT 84322"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/DigitalContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/Address">
+
+                    <TextView
+                        android:id="@+id/emailLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="usucs@aggies.usu.edu"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/phoneLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number:"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="(435) 797-2451"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/ContactInfo">
+
+            <Button
+                android:id="@+id/toResearchButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Research" />
+
+            <Button
+                android:id="@+id/toFacultyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Faculty" />
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -6,6 +6,7 @@
     tools:context=".ResearchFragment">
 
     <TextView
+        android:id="@+id/researchToDo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="recycler view with list of research areas - each one has name, description, and names of faculty involved"
