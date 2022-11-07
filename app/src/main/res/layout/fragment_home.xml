@@ -232,6 +232,7 @@
                 android:id="@+id/contactLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="12sp"
                 android:text="Contact us!"
                 android:textAlignment="center" />
 
@@ -257,6 +258,7 @@
                         android:id="@+id/addressLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="12sp"
                         android:text="Address:"
                         android:textAlignment="center" />
 
@@ -264,6 +266,7 @@
                         android:id="@+id/addressLine1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="12sp"
                         android:text="4205 Old Main Hill"
                         android:textAlignment="center" />
 
@@ -271,6 +274,7 @@
                         android:id="@+id/addressLine2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="12sp"
                         android:text="Office 414 Old Main Bldg"
                         android:textAlignment="center" />
 
@@ -278,6 +282,7 @@
                         android:id="@+id/addressLine3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="12sp"
                         android:text="Logan, UT 84322"
                         android:textAlignment="center" />
                 </LinearLayout>
@@ -296,6 +301,7 @@
                         android:id="@+id/emailLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="12sp"
                         android:text="Email:"
                         android:textAlignment="center" />
 
@@ -303,6 +309,7 @@
                         android:id="@+id/email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="12sp"
                         android:text="usucs@aggies.usu.edu"
                         android:textAlignment="center" />
 
@@ -310,6 +317,7 @@
                         android:id="@+id/phoneLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="12sp"
                         android:text="Phone Number:"
                         android:textAlignment="center" />
 
@@ -317,6 +325,7 @@
                         android:id="@+id/phoneNumber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="12sp"
                         android:text="(435) 797-2451"
                         android:textAlignment="center" />
 
