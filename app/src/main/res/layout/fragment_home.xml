@@ -55,6 +55,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Students"
+                    android:textSize="18sp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/numberOfStudentsYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2020-2021"
                     android:textAlignment="center" />
 
             </LinearLayout>
@@ -81,7 +89,14 @@
                     android:id="@+id/bachelorDegreesLabel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="18sp"
                     android:text="Degrees Awarded"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/bachelorDegreesYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2020-2021"
                     android:textAlignment="center" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
