@@ -12,31 +12,186 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/numberOfStudents"
+            android:id="@+id/homepageHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="NUMBER OF STUDENTS HERE"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:text="USU Computer Science Program"
+
+            android:textAlignment="center"
+            android:textSize="27dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/programsOffered" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/homepageHeader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/programsOffered">
+
+            <LinearLayout
+                android:id="@+id/studentsLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/degreesLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/numberOfStudentsData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="560"
+                    android:textAlignment="center"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/numberOfStudentsLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Students"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/degreesLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/studentsLayout"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/degreesData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="148"
+                    android:textAlignment="center"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/bachelorDegreesLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Degrees Awarded"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/students"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </LinearLayout>
+
+
+        <LinearLayout
             android:id="@+id/programsOffered"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="PROGRAMS OFFERED HERE"
-            app:layout_constraintBottom_toTopOf="@+id/headOfProgram"
-            app:layout_constraintEnd_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/headOfProgram"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/numberOfStudents" />
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout2">
+
+            <LinearLayout
+                android:id="@+id/undergradPrograms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/undergradHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Undergraduate Programs"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BS in Computer Science" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5-Year Combined BS/MS in Computer Science" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Science Minor" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Science Teaching Minor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gradPrograms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/gradHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Graduate Programs"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Two options for Computer Science MS" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Master of Computer Science" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Data Science MS" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Science PhD" />
+
+            </LinearLayout>
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/headOfProgram"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="HEAD OF PROGRAM HERE"
-            app:layout_constraintBottom_toTopOf="@+id/ContactInfo"
+            android:layout_marginStart="16dp"
+            android:text="Head of Program: Dr. Xiaojun Qi"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/ButtonLayout"
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/programsOffered" />
@@ -77,24 +232,28 @@
                     app:layout_constraintStart_toStartOf="parent">
 
                     <TextView
+                        android:id="@+id/addressLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Address:"
                         android:textAlignment="center" />
 
                     <TextView
+                        android:id="@+id/addressLine1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="4205 Old Main Hill"
                         android:textAlignment="center" />
 
                     <TextView
+                        android:id="@+id/addressLine2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Office 414 Old Main Bldg"
                         android:textAlignment="center" />
 
                     <TextView
+                        android:id="@+id/addressLine3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Logan, UT 84322"
@@ -133,6 +292,7 @@
                         android:textAlignment="center" />
 
                     <TextView
+                        android:id="@+id/phoneNumber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="(435) 797-2451"
@@ -162,6 +322,7 @@
                 android:layout_height="wrap_content"
                 android:text="Faculty" />
         </LinearLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

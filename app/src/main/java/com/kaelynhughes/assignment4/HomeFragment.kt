@@ -16,11 +16,9 @@ class HomeFragment : Fragment() {
     ): View? {
         val binding = FragmentHomeBinding.inflate(inflater, container, false)
         binding.toFacultyButton.setOnClickListener {
-            println("navigating to faculty")
             findNavController().navigate(R.id.home_to_faculty)
         }
         binding.toResearchButton.setOnClickListener {
-            println("navigating to research")
             findNavController().navigate(R.id.home_to_research)
         }
         return binding.root
