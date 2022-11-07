@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/facultyFragment"
+        android:name="com.kaelynhughes.assignment4.FacultyFragment"
+        android:label="fragment_faculty"
+        tools:layout="@layout/fragment_faculty" >
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.kaelynhughes.assignment4.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/home_to_research"
+            app:destination="@id/researchFragment" />
+        <action
+            android:id="@+id/home_to_faculty"
+            app:destination="@id/facultyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/researchFragment"
+        android:name="com.kaelynhughes.assignment4.ResearchFragment"
+        android:label="fragment_research"
+        tools:layout="@layout/fragment_research" />
+</navigation>
