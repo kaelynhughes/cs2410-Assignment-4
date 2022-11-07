@@ -12,7 +12,7 @@ import com.kaelynhughes.assignment4.databinding.FragmentFacultyBinding
 
 data class FacultyMember(
     val name: String,
-    val email: String,
+    val title: String,
     val office: String
 )
 
@@ -24,9 +24,32 @@ class FacultyFragment : Fragment() {
     ): View? {
         val binding = FragmentFacultyBinding.inflate(inflater, container, false)
 
-        val faculty = (0 until 100).map {
-            FacultyMember("Person ${it}", "${it}@usu.edu", "${it}")
-        }.toList()
+        val faculty = listOf(
+            FacultyMember("Mahdi Nasrullah Al-Ameen", "Assistant Professor", "Old Main 401F"),
+            FacultyMember("Vicki Allan", "Associate Professor", "Old Main 429"),
+            FacultyMember("Soukaina Filali Boubrahimi", "Assistant Professor", "Old Main 401A"),
+            FacultyMember("Heng-Da Cheng", "Professor", "Old Main 401B"),
+            FacultyMember("Isaac Cho", "Assistant Professor", "Old Main 402G"),
+            FacultyMember("Stephen Clyde", "Emeritus Associate Professor", "Old Main 418"),
+            FacultyMember("Joseph Ditton", "Professional Practice Assistant Professor", "Old Main 420"),
+            FacultyMember("Curtis Dyreson", "Professor", "Old Main 402A"),
+            FacultyMember("John Edwards", "Assistant Professor", "Old Main 401D"),
+            FacultyMember("Erik Falor", "Professional Practice Associate Professor", "Old Main 418A"),
+            FacultyMember("Nicholas Flann", "Associate Professor", "Old Main 402C"),
+            FacultyMember("Mario Harper", "Assistant Professor", "Old Main 401E"),
+            FacultyMember("Hamid Karimi", "Assistant Professor", "Old Main 418"),
+            FacultyMember("Rakesh Kaundal", "Assistant Professor", "CIB 101B"),
+            FacultyMember("Vladimir Kulyukin", "Associate Professor", "Old Main 402D"),
+            FacultyMember("Chad Mano", "Professional Practice Associate Professor", "Old Main 435"),
+            FacultyMember("Dean Mathias", "Professional Practice Associate Professor", "Old Main 426"),
+            FacultyMember("Shah Muhammad Hamdi", "Assistant Professor", "Old Main 437"),
+            FacultyMember("Steve Petruzza", "Assistant Professor", "Old Main 424"),
+            FacultyMember("Xiaojun Qi", "Department Head and Professor", "Old Main 414A"),
+            FacultyMember("Haitao Wang", "Professor", "Old Main 402F"),
+            FacultyMember("Dan Watson", "Associate Professor", "Old Main 402B"),
+            FacultyMember("Shuhan Yuan", "Assistant Professor", "Old Main 401C")
+        )
+
 
         binding.facultyRecyclerView.adapter = FacultyAdapter(faculty)
         binding.facultyRecyclerView.layoutManager = LinearLayoutManager(this.context)
@@ -52,7 +75,7 @@ class FacultyAdapter(val faculty: List<FacultyMember>): RecyclerView.Adapter<Fac
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val facultyMember = faculty[position]
         holder.binding.nameTextView.text = facultyMember.name
-        holder.binding.emailTextView.text = facultyMember.email
+        holder.binding.emailTextView.text = facultyMember.title
         holder.binding.officeTextView.text = facultyMember.office
     }
 }
