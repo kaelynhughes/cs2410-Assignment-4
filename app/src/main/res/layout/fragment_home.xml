@@ -48,7 +48,7 @@
                     android:layout_height="wrap_content"
                     android:text="560"
                     android:textAlignment="center"
-                    android:textSize="50sp" />
+                    android:textSize="45sp" />
 
                 <TextView
                     android:id="@+id/numberOfStudentsLabel"
@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:text="148"
                     android:textAlignment="center"
-                    android:textSize="50sp" />
+                    android:textSize="45sp" />
 
                 <TextView
                     android:id="@+id/bachelorDegreesLabel"
@@ -139,23 +139,27 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Undergraduate Programs"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="12sp"
                     android:text="BS in Computer Science" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="12sp"
                     android:text="5-Year Combined BS/MS in Computer Science" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="12sp"
                     android:text="Computer Science Minor" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="12sp"
                     android:text="Computer Science Teaching Minor" />
 
             </LinearLayout>
@@ -176,23 +180,27 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Graduate Programs"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="12sp"
                     android:text="Two options for Computer Science MS" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="12sp"
                     android:text="Master of Computer Science" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="12sp"
                     android:text="Data Science MS" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="12sp"
                     android:text="Computer Science PhD" />
 
             </LinearLayout>
@@ -205,7 +213,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="Head of Program: Dr. Xiaojun Qi"
-            android:textSize="20sp"
+            android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/ButtonLayout"
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -215,11 +223,10 @@
             android:id="@+id/ContactInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="parent"
-            app:layout_constraintStart_toStartOf="parent" >
+            app:layout_constraintStart_toStartOf="parent">
 
             <TextView
                 android:id="@+id/contactLabel"
